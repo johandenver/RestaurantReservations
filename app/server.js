@@ -8,6 +8,7 @@ var PORT=3001;
 
 // Reservations Array: 
 var reservations = [];
+// Waitlist Array:
 var waitlist = [];
 
 // Sets up the Express app to handle data parsing
@@ -30,10 +31,12 @@ app.get("/tables.html", function(req, res) {
 res.sendFile(path.join(__dirname, "./views/tables.html"));
 });
 
-app.get("/api/reservations", fuction(req, res){
-    res.json
-})
+app.get("/api/reservations", function(req, res) {
+    console.log(res);
+    
+});
 
+app.post("", function)
 
 // ===========================================================
 app.listen(PORT, function() {
